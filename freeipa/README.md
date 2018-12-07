@@ -30,3 +30,7 @@ We want our admin users to be able to run sudo commands. Following are steps to 
 
 
 ### Set up FreeIPA Client
+```
+ipa-client-install --server test.fios-router.home --domain test.fios-router.home  -w password --principal admin
+authconfig --enablemkhomedir --update
+```
