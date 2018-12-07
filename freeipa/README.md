@@ -34,3 +34,5 @@ We want our admin users to be able to run sudo commands. Following are steps to 
 ipa-client-install --server test.fios-router.home --domain test.fios-router.home  -w password --principal admin
 authconfig --enablemkhomedir --update
 ```
+### Run LDAP search on FreeIPA
+`ldapsearch -x -h freeipa.example.com -b dcexample,dc=com uid=<Username>`
